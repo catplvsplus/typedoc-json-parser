@@ -1,6 +1,6 @@
 {
   "name": "@catplvsplus/typedoc-json-parser",
-  "version": "10.2.1",
+  "version": "10.2.2",
   "type": "module",
   "module": "./dist/index.js",
   "main": "./dist/index.cjs",
