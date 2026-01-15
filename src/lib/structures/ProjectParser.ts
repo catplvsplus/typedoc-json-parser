@@ -6,7 +6,6 @@ import { ClassParser } from '#lib/structures/class-parser';
 import { EnumParser } from '#lib/structures/enum-parser';
 import { InterfaceParser } from '#lib/structures/interface-parser';
 import { ReflectionKind, reflectionKindToString, type SearchResult } from '#lib/types';
-import { bold, red, yellow } from 'colorette';
 import type { JSONOutput } from 'typedoc';
 import { TypeParser } from './type-parsers/TypeParser.js';
 
@@ -120,29 +119,11 @@ export class ProjectParser {
       const currentTypeDocVersion = this.typeDocJsonParserVersion.split('.').map(Number) as [number, number, number];
 
       if (incomingTypeDocVersion[0] !== currentTypeDocVersion[0]) {
-        console.warn(
-          red(
-            `${bold('[WARNING]')} typedoc-json-parser major version mismatch. Expected ${currentTypeDocVersion[0]}, but received ${
-              incomingTypeDocVersion[0]
-            }`
-          )
-        );
+        console.warn(`[WARNING] typedoc-json-parser major version mismatch. Expected ${currentTypeDocVersion[0]}, but received ${incomingTypeDocVersion[0]}`);
       } else if (incomingTypeDocVersion[1] !== currentTypeDocVersion[1]) {
-        console.warn(
-          yellow(
-            `${bold('[WARNING]')} typedoc-json-parser minor version mismatch. Expected ${currentTypeDocVersion[1]}, but received ${
-              incomingTypeDocVersion[1]
-            }`
-          )
-        );
+        console.warn(`[WARNING] typedoc-json-parser minor version mismatch. Expected ${currentTypeDocVersion[1]}, but received ${incomingTypeDocVersion[1]}`);
       } else if (incomingTypeDocVersion[2] !== currentTypeDocVersion[2]) {
-        console.warn(
-          yellow(
-            `${bold('[WARNING]')} typedoc-json-parser patch version mismatch. Expected ${currentTypeDocVersion[2]}, but received ${
-              incomingTypeDocVersion[2]
-            }`
-          )
-        );
+        console.warn(`[WARNING] typedoc-json-parser patch version mismatch. Expected ${currentTypeDocVersion[2]}, but received ${incomingTypeDocVersion[2]}`);
       }
 
       this.typeDocJsonParserVersion = typeDocJsonParserVersion;
