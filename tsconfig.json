@@ -4,6 +4,10 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "../dist",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
     "paths": {
       "#bin/commands/*": ["./src/bin/commands/*"],
       "#bin/lib/*": ["./src/bin/lib/*"],

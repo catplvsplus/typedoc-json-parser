@@ -61,29 +61,26 @@ export namespace TypeParser {
    */
   export function generateFromTypeDoc(
     type:
-      | (
-          | JSONOutput.ArrayType
-          | JSONOutput.ConditionalType
-          | JSONOutput.IndexedAccessType
-          | JSONOutput.InferredType
-          | JSONOutput.IntersectionType
-          | JSONOutput.IntrinsicType
-          | JSONOutput.LiteralType
-          | JSONOutput.OptionalType
-          | JSONOutput.PredicateType
-          | JSONOutput.QueryType
-          | JSONOutput.ReferenceType
-          | JSONOutput.ReflectionType
-          | JSONOutput.RestType
-          | JSONOutput.TupleType
-          | JSONOutput.TypeOperatorType
-          | JSONOutput.UnionType
-          | JSONOutput.UnknownType
-          | JSONOutput.MappedType
-          | JSONOutput.TemplateLiteralType
-          | JSONOutput.NamedTupleMemberType
-        )
-      | JSONOutput.SomeType
+      |JSONOutput.ArrayType
+      |JSONOutput.ConditionalType
+      |JSONOutput.IndexedAccessType
+      |JSONOutput.InferredType
+      |JSONOutput.IntersectionType
+      |JSONOutput.IntrinsicType
+      |JSONOutput.LiteralType
+      |JSONOutput.MappedType
+      |JSONOutput.OptionalType
+      |JSONOutput.PredicateType
+      |JSONOutput.QueryType
+      |JSONOutput.ReferenceType
+      |JSONOutput.ReflectionType
+      |JSONOutput.RestType
+      |JSONOutput.TemplateLiteralType
+      |JSONOutput.TupleType
+      |JSONOutput.NamedTupleMemberType
+      |JSONOutput.TypeOperatorType
+      |JSONOutput.UnionType
+      |JSONOutput.UnknownType
   ): TypeParser {
     switch (type.type) {
       case 'array': {

@@ -5,6 +5,7 @@
   "module": "./dist/index.js",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
+  "bin": "./dist/bin/index.js",
   "exports": {
     ".": {
       "import": {
@@ -18,14 +19,16 @@
     }
   },
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "check": "tsc --noEmit",
+    "docs": "tsdown && node dist/bin/index.js --json docs/api.json --verbose"
   },
   "devDependencies": {
     "@types/node": "^25.0.8",
     "rolldown": "^1.0.0-beta.60",
     "tsdown": "^0.20.0-beta.3",
-    "typedoc": "^0.28.16",
-    "typescript": "^5.9.3"
+    "typedoc": "^0.26.4",
+    "typescript": "^5.5.0"
   },
   "dependencies": {
     "@favware/colorette-spinner": "^1.0.1",
