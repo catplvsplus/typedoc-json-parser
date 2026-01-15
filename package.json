@@ -21,8 +21,14 @@
   "scripts": {
     "build": "tsdown",
     "check": "tsc --noEmit",
-    "docs": "tsdown && node dist/bin/index.js --json docs/api.json --verbose"
+    "docs": "tsdown && node dist/bin/index.js --json docs/api.json --verbose",
+    "prepack": "tsdown"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/node": "^25.0.8",
     "rolldown": "^1.0.0-beta.60",
