@@ -1,4 +1,4 @@
-import { exec } from '#bin/lib/exec';
+import { exec } from '#bin/lib/node/exec';
 import type { Options } from '#bin/lib/types';
 import { Spinner } from '@favware/colorette-spinner';
 

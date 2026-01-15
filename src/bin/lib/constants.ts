@@ -1,4 +1,4 @@
-import { join } from 'node:path';
+import { join } from 'pathe';
 
 export const typedocJsonParserRcPath = join(process.cwd(), '.typedoc-json-parserrc');
 

@@ -1,0 +1,21 @@
+{
+  "include": ["./src/**/*.ts"],
+  "exclude": ["tsdown.config.ts"],
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "../dist",
+    "paths": {
+      "#bin/commands/*": ["./src/bin/commands/*"],
+      "#bin/lib/*": ["./src/bin/lib/*"],
+      "#bin/lib/types": ["./src/bin/lib/types/index.ts"],
+      "#bin/types/version": ["./src/bin/types/Version/index.ts"],
+      "#lib/structures/*": ["./src/lib/structures/*"],
+      "#lib/structures/class-parser": ["./src/lib/structures/class-parser/index.ts"],
+      "#lib/structures/enum-parser": ["./src/lib/structures/enum-parser/index.ts"],
+      "#lib/structures/interface-parser": ["./src/lib/structures/interface-parser/index.ts"],
+      "#lib/structures/misc": ["./src/lib/structures/misc/index.ts"],
+      "#lib/structures/type-parsers": ["./src/lib/structures/type-parsers/index.ts"],
+      "#lib/types": ["./src/lib/types/index.ts"]
+    }
+  }
+}

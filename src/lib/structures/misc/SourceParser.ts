@@ -1,4 +1,4 @@
-import { basename, dirname } from 'node:path';
+import { basename, dirname } from 'pathe';
 import type { JSONOutput } from 'typedoc';
 
 /**

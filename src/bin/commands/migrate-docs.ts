@@ -6,7 +6,7 @@ import { Spinner } from '@favware/colorette-spinner';
 import { findFilesRecursivelyStringEndsWith } from '@sapphire/node-utilities';
 import { blue, green, red, yellow } from 'colorette';
 import { readFile, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { resolve } from 'pathe';
 
 const isCI =
   process.env.CI ||

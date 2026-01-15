@@ -3,7 +3,7 @@ import { ProjectParser } from '#lib/structures/ProjectParser';
 import { Spinner } from '@favware/colorette-spinner';
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { resolve } from 'pathe';
 import type { JSONOutput } from 'typedoc';
 
 interface PackageJson {

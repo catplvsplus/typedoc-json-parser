@@ -4,7 +4,7 @@ import { buildDocs } from '#bin/commands/build-docs';
 import { checkRepository } from '#bin/commands/check-repository';
 import { migrateDocs } from '#bin/commands/migrate-docs';
 import { parseDocs } from '#bin/commands/parse-docs';
-import { parseOptions } from '#bin/lib/parseOptions';
+import { parseOptions } from '#bin/lib/node/parseOptions';
 import type { Options, RequiredExcept } from '#bin/lib/types';
 import { bold, red } from 'colorette';
 import { Command } from 'commander';
