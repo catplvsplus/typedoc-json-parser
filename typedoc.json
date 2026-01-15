@@ -1,0 +1,6 @@
+{
+    "entryPoints": ["./src/index.ts"],
+    "json": "docs/api.json",
+    "tsconfig": "tsconfig.json",
+    "treatWarningsAsErrors": false
+}
