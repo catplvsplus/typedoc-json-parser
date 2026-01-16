@@ -15,11 +15,7 @@ export default defineConfig({
     dts: true,
     sourcemap: true,
     clean: true,
-    unbundle: true,
     skipNodeModulesBundle: true,
-    noExternal: [
-        'pathe'
-    ],
     plugins: [
         replacePlugin({
             'process.env.__VERSION__': `"${packageJSON.version}"`
