@@ -21,7 +21,7 @@
     "build": "tsdown",
     "check": "tsc --noEmit",
     "docs": "tsdown && bun dist/bin/index.js --json docs/api.json --verbose",
-    "prepack": "tsdown"
+    "prepack": "bun run build"
   },
   "files": [
     "dist",
